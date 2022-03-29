@@ -11,7 +11,7 @@
   <body>
     <div class="main">
       <input id="stdid" type="text" size="20" />
-      <a onclick="">Submit</a>
+      <a onclick="postStudentData()">Submit</a>
     </div>
 
     <script>
@@ -20,7 +20,7 @@
         const data = stateId;
 
         const CSRF_TOKEN = "{{csrf_token}}";
-        const url = "{%url ''%}";
+        const url = "{%url 'homwp==w'%}";
         dataEntry(url, CSRF_TOKEN, data);
       }
     </script>
