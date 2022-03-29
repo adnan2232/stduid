@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stduid/static/core.css" />
+    <script src="/stduid/templates/core.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <input id="stdid" type="text" size="20" />
+      <a onclick="">Submit</a>
+    </div>
+
+    <script>
+      function postStudentData() {
+        const stateId = $(".stateId").val();
+        const data = stateId;
+
+        const CSRF_TOKEN = "{{csrf_token}}";
+        const url = "{%url ''%}";
+        dataEntry(url, CSRF_TOKEN, data);
+      }
+    </script>
+  </body>
+</html>

@@ -1,12 +1,29 @@
 {% load static%}
 
-<html>
-    <head>
-        <link href="{%static 'core.css'%}">
-    </head>
-
-
-    <body>
-        Hello World
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{%static 'core.css'%}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="2">
+          <h1>Unique Student identification and student profile system</h1>
+        </td>
+      </tr>
+      <tr>
+        <td class="searchusing"><h1>Search using :</h1></td>
+        <td><a href="{%templates 'stdid.html'%}">Student UID</a></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="/stduid/templates/temp.html">College UID</a></td>
+      </tr>
+    </table>
+  </body>
 </html>

@@ -1,0 +1,36 @@
+{% load static%}
+
+<html>
+    <head>
+        <link href="{%static 'core.css'%}">
+        <script src="{%static 'core.js'%}"></script>
+    </head>
+
+
+    <body>
+
+        <!-- "stateId": dataArray[0],
+            "uniId": dataArray[1],
+            "collegeId" : dataArray[2], 
+            "grNo" : dataArray[3] -->
+
+        <input class="studentUid" type="text" size="20">
+        
+        <button class = "submitButton" type="submit" onclick="postStudentData">Get Data</button>
+
+        <div class="studentInfo">
+
+        </div>
+
+        <script>
+
+            function postStudentData(){
+                const data = $(".studentUid").val();
+                const CSRF_TOKEN = "{{csrf_token}}";
+                const url = "{%url ''%}"
+                dataEntry(url,CSRF_TOKEN, data);
+            }
+        </script>
+    </body>
+
+</html>
