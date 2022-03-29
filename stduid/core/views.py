@@ -4,3 +4,10 @@ from django.shortcuts import render
 def homepage(req):
     return render(req, 'index.html')
     
+def stdid(req):
+    return render(req,"stdid.html")
+
+def collegeid(req):
+    return render(req,"clgid.html")
+
+
