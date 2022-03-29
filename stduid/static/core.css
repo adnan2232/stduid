@@ -6,6 +6,28 @@ body {
   background-color: #212121;
 }
 
+.main {
+  margin: auto;
+}
+
+.container {
+  margin: 2em 0 0 0;
+}
+
+input {
+  border: #000;
+  border-style: solid;
+  border-bottom-width: 0.3em;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  padding: 0 1em 0 1em;
+  color: #fff;
+  font-size: 1.2em;
+  outline: none;
+  background-color: #212121;
+}
+
 table {
   margin: auto;
   margin-top: 10rem;

@@ -1,7 +1,7 @@
 
 async function dataEntry(url,csrf_token, data){
 
-    const dataArray = data.spilt(".");
+    const dataArray = data.split(".");
     
     // if(dataArray.length < 4){
     //     alert("Length of new password should greater than 7");
@@ -31,8 +31,8 @@ async function dataEntry(url,csrf_token, data){
                 // const universityName = res["uniName"];
                 // const state = res["state"];
 
-                
-
+                console.log(res["state"])
+                console.log("success")
 
         }).catch((fail) =>{
             alert(fail);
